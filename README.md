@@ -1,5 +1,5 @@
 # get-gitlab-repos
-Simple script to let you download all Gitlab repos in a particular group.
+Simple script to let you clone or pull all Gitlab repos in a particular group.
 
 ## Requirements
 1. [jq](https://stedolan.github.io/jq/) 
@@ -8,4 +8,5 @@ Simple script to let you download all Gitlab repos in a particular group.
 
 ## Usage
 1. cd into the directory you want the repos to be pulled into
-2. Run the script: `sh get-gitlab-repos [PERSONAL_ACCESS_TOKEN] [GROUP_ID]`. All repos will be cloned.
+2. To Clone: `sh get-gitlab-repos [PERSONAL_ACCESS_TOKEN] [GROUP_ID]`. All repos will be cloned.
+3. To Pull: `sh pull-gitlab-repos [PERSONAL_ACCESS_TOKEN] [GROUP_ID]`. All repos will be puled.
