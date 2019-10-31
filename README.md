@@ -9,4 +9,6 @@ Simple script to let you clone or pull all Gitlab repos in a particular group.
 ## Usage
 1. cd into the directory you want the repos to be pulled into
 2. To Clone: `sh get-gitlab-repos [PERSONAL_ACCESS_TOKEN] [GROUP_ID]`. All repos will be cloned.
-3. To Pull: `sh pull-gitlab-repos [PERSONAL_ACCESS_TOKEN] [GROUP_ID]`. All repos will be puled.
+3. To Pull, add the following to your .gitconfig:`[alias]
+        all = "!f() { ls | xargs -P10 -I{} git -C {} $1; }; f"`
+    You can now do `git all pull`
